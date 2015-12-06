@@ -1,0 +1,15 @@
+Info = class()
+
+function Info:draw()
+    fill(0, 0, 0, 255)
+    font("AmericanTypewriter-Bold")
+    fontSize(20)
+    textMode(CORNER)
+    text(owner, 590, 565)
+    fontSize(15)
+    font("AmericanTypewriter")
+    text(owner .. " is an very young developer with Lua (Codea)", 500, 540)
+    text("Born in Russia and live in Germany (EU). He came to", 500, 515)
+    text("world at year 2003 in the 26th of the January.", 500, 500)
+    text("This calculator is his first released project.", 500, 475)
+end
