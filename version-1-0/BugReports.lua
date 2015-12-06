@@ -1,0 +1,17 @@
+Bugs = class()
+
+function Bugs:draw()
+    fill(0, 0, 0, 255)
+    font("AmericanTypewriter-Bold")
+    fontSize(20)
+    textMode(CORNER)
+    text("News and Bugs", 590, 565)
+    fontSize(15)
+    font("AmericanTypewriter")
+    text("BUG - After the answer clicking any special symbol", 500, 540)
+    text("(•, :, -, +). So please use the CE for new answer", 500, 525)
+    text("BUG - On the button holding and moving, the color", 500, 500)
+    text("will change back.", 500, 485)
+    text("SOON - Ability to make numbers smaller then 0.", 500, 460)
+    text("Meaning: 0.678864 ; 45.753; ...", 500, 445)
+end
