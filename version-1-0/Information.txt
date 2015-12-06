@@ -1,0 +1,1 @@
+It's a cool calculator with colored buttons. The Calculator is not connected to any engines (No virus!), and it is a cool thing for lua starters to learn, how a math calculator was created
