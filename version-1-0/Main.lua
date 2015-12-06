@@ -6,7 +6,7 @@ drawing = true
 answernumber = 0
 mute = true
 
-owner = "Anatoly W."
+owner = "TokOut"
 
 displayMode(OVERLAY)
 displayMode(FULLSCREEN)
