@@ -1,0 +1,83 @@
+Panel = class()
+
+function Panel:draw()
+    if isNumber1 == true then isNumberBoalen = "true" else isNumberBoalen = "false" end
+    if usedPi == true then PI = "" else PI = "not" end
+    if mute == true then soundstate = "Off" else soundstate = "On" end
+    fill(0, 0, 0, 255)
+    font("AmericanTypewriter-Bold")
+    fontSize(20)
+    textMode(CORNER)
+    text("Control Panel for Developers", 500, 565)
+    fontSize(15)
+    font("AmericanTypewriter")
+    text("Number (1) is " .. number, 500, 550)
+    text("Number (2) is " .. number2, 500, 535)
+    text("Number (A) is " .. answernumber, 500, 520)
+    text("Current Operation is << " .. operation .. ">>", 500, 495)
+    text("Music is " .. soundstate, 500, 480)
+    text("Extra", 500, 460)
+    text("Number1 is now " .. isNumberBoalen, 500, 445)
+    text("The Number Pi is currently " .. PI .. " used.", 500, 430)
+end
+
+Logo = class()
+
+function Logo:draw()
+    translate(637.5, 490)
+    rotate(ElapsedTime*75)
+    fill(48, 255, 0, 255)
+    ellipse(5, 5, 220)
+    fill(0, 255, 157, 255)
+    rect(-58.5, -58.5, 130, 130)
+    stroke(255, 255, 255, 255)
+    strokeWidth(15)
+    line(5, -45, 5, 56)
+    line(55, 5, -45, 5)
+    fill(0, 0, 0, 255)
+    fontSize(100)
+    translate(1, 1)
+    rotate(ElapsedTime * 500)
+    text("2 + 2")
+    rotate(ElapsedTime * 250)
+    text("10 + 10")
+end
+
+News = class()
+
+function News:draw()
+    fill(0, 0, 0, 255)
+    font("AmericanTypewriter-Bold")
+    fontSize(20)
+    textMode(CORNER)
+    text("News and Bugs", 590, 565)
+    fontSize(15)
+    font("AmericanTypewriter")
+    -- Difference between one paragraph line - 15; new paragraph difference - 20
+    text("NEW - Logo  is updated and with more effects and", 500, 540)
+    text("the Control panels have been updated! 2.0!", 500, 525)
+    text("FIXES - After answer taking an operation that", 500, 505)
+    text("it resulted the second number of the op. Fixed!", 500, 490)
+    text("NEW - Created more buttons.", 500, 470)
+    text("SOON - Adding a new page for buttons, with buttons", 500, 450)
+    text("Also will add more animation and set to MiniCode.", 500, 435)
+end
+
+Info = class()
+
+function Info:draw()
+    fill(0, 0, 0, 255)
+    font("AmericanTypewriter-Bold")
+    fontSize(20)
+    textMode(CORNER)
+    text("About "..owner, 590, 565)
+    fontSize(15)
+    font("AmericanTypewriter")
+    text(owner .. " is an very new developer with Lua (Codea)", 500, 540)
+    text("Born in Russia and live in Germany (EU). He came to", 500, 515)
+    text("world at year 2003 in the 26th of the January.", 500, 500)
+    text("This calculator is his first released project.", 500, 475)
+    font("Baskerville-Italic")
+    text("Quote: Nice to develop without mistakes which", 500, 450)
+    text("got fixed, and are created with fun!", 500, 435)
+end
