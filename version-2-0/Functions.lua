@@ -141,9 +141,8 @@ function answer()
         answernumber = math.floor(answernumber)
         txt.value = txt.value .. " = " .. answernumber
     elseif operation == "mod" then
-        -- Actually bugging
         answernumber = number2/number
-        answernumber = answernumber - math.floor(answernumber)
+        answernumber = math.floor(answernumber)
         txt.value = txt.value .. " = " .. answernumber
     end
     if mute == false then
